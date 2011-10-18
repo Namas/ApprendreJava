@@ -3,107 +3,107 @@ package cms_tp4;
 public class Aux_TP4Exo1 
 {
 //************************************************************************************************************************	
-//	Définir une méthode statique appelée "verifierBaseNombre" qui a deux arguments :
-//	    - le premier argument "base" représentant une base comprise entre 2 et 9 ;
-//	    - le deuxième argument "nombre" représentant un nombre entier positif exprimé dans la base mentionnée ;
-//	 et qui retourne une valeur booléenne :
+//	Dï¿½finir une mï¿½thode statique appelï¿½e "verifierBaseNombre" qui a deux arguments :
+//	    - le premier argument "base" reprï¿½sentant une base comprise entre 2 et 9 ;
+//	    - le deuxiï¿½me argument "nombre" reprï¿½sentant un nombre entier positif exprimï¿½ dans la base mentionnï¿½e ;
+//	 et qui retourne une valeur boolï¿½enne :
 //	    - FAUX si le premier argument est trop petit ou trop grand ou
-//	           si un chiffre qui apparaît dans le deuxième argument est supérieur ou égal à la base ;
+//	           si un chiffre qui apparaï¿½t dans le deuxiï¿½me argument est supï¿½rieur ou ï¿½gal ï¿½ la base ;
 //	    - VRAI dans les autres cas.	
 	    
-	//Préciser l'en-tête de la méthode
-	
+	//Prï¿½ciser l'en-tï¿½te de la mï¿½thode
+	public static boolean verifierBaseNombre(int base, int nbr)
 	{
 	    //Si la base n'est pas comprise entre 2 et 9
-		if()
+		if((base<2)||(base>9))
 		{
 			//Afficher une message d'erreur
-			
-			//Retourner la valeur booléenne FAUX (et quitter la fonction)
-			
+			System.out.println("Err: base non valide !");
+			//Retourner la valeur boolï¿½enne FAUX (et quitter la fonction)
+			return	false;
 		}
 		
-	    //La partie qui suit s'exécute seulement si la base est bien comprise entre 2 et 9
+	    //La partie qui suit s'exï¿½cute seulement si la base est bien comprise entre 2 et 9
 		
-		//Créer la variable "strNombre" de type String qui correspond au deuxième argument transformé en chaîne de caractères
+		//Crï¿½er la variable "strNombre" de type String qui correspond au deuxiï¿½me argument transformï¿½ en chaï¿½ne de caractï¿½res
 		
-		//Créer la variable "lon" de type int qui stocke la longueur de la chaîne de caractères "strNombre"
+		//Crï¿½er la variable "lon" de type int qui stocke la longueur de la chaï¿½ne de caractï¿½res "strNombre"
 		
-		//Créer un compteur entier "i" initialisé à zéro et qui sera utilisé dans la boucle do ci-dessous
+		//Crï¿½er un compteur entier "i" initialisï¿½ ï¿½ zï¿½ro et qui sera utilisï¿½ dans la boucle do ci-dessous
 		
-		//Dans une boucle do, comparer chaque chiffre du deuxième argument ("le nombre") avec le premier argument ("la base")
+		//Dans une boucle do, comparer chaque chiffre du deuxiï¿½me argument ("le nombre") avec le premier argument ("la base")
 		do
 		{
-			//Si le chiffre courant est plus grand ou égal à la base
+			//Si le chiffre courant est plus grand ou ï¿½gal ï¿½ la base
 			if()
 			{
 				//Afficher un message d'erreur
 				
-				//Retourner la valeur booléenne FAUX (et quitter le méthode)
+				//Retourner la valeur boolï¿½enne FAUX (et quitter le mï¿½thode)
 				
 			}
-			//Incrémenter le compteur
+			//Incrï¿½menter le compteur
 			
-		//Continuer la boucle tant qu'il y a encore des chiffres à tester
+		//Continuer la boucle tant qu'il y a encore des chiffres ï¿½ tester
 		}while();
-		//Retourner la valeur booléenne VRAI 
-		//(car le programme arrive à ce point seulement si le couple "base et nombre" est valide)
+		//Retourner la valeur boolï¿½enne VRAI 
+		//(car le programme arrive ï¿½ ce point seulement si le couple "base et nombre" est valide)
 		
-	}	//fin de la méthode verifierBaseNombre
+	}	//fin de la mï¿½thode verifierBaseNombre
 
 //************************************************************************************************************************	
-//	Définir une méthode statique appelée "calculerSomme" qui a trois arguments :
-//    	- le premier argument "b" représentant une base comprise entre 2 et 9 ;
-//    	- les deux arguments suivants ("nb1" et "nb2") représentant deux nombres entiers positifs exprimés dans la base mentionnée ;
+//	Dï¿½finir une mï¿½thode statique appelï¿½e "calculerSomme" qui a trois arguments :
+//    	- le premier argument "b" reprï¿½sentant une base comprise entre 2 et 9 ;
+//    	- les deux arguments suivants ("nb1" et "nb2") reprï¿½sentant deux nombres entiers positifs exprimï¿½s dans la base mentionnï¿½e ;
 // 	et qui :
-//    	- si au moins un des trois arguments n'est pas valide, arrête l'exécution du programme ;
+//    	- si au moins un des trois arguments n'est pas valide, arrï¿½te l'exï¿½cution du programme ;
 //    	- dans les autres cas, retourne la somme des deux derniers arguments.
 	
-	//Préciser l'en-tête de la méthode
+	//Prï¿½ciser l'en-tï¿½te de la mï¿½thode
 	
 	{
-	    //Utiliser la méthode ad-hoc verifierBaseNombre définie ci-dessus afin de vérifier 
-	    // si le couple b et nb1 (i.e. la base et le premier terme de la somme à calculer) n'est pas valide
+	    //Utiliser la mï¿½thode ad-hoc verifierBaseNombre dï¿½finie ci-dessus afin de vï¿½rifier 
+	    // si le couple b et nb1 (i.e. la base et le premier terme de la somme ï¿½ calculer) n'est pas valide
 		if()
 		{
 			//Afficher un message d'erreur 
 			
-			//Quitter prématurément le programme
+			//Quitter prï¿½maturï¿½ment le programme
 			 
 		}
-	    //Utiliseer la méthode ad-hoc verifierBaseNombre définie ci-dessus afin de vérifier
-		//si le couple b et nb2 (i.e. la base et le deuxième terme de la somme à calculer) n'est pas valide
+	    //Utiliseer la mï¿½thode ad-hoc verifierBaseNombre dï¿½finie ci-dessus afin de vï¿½rifier
+		//si le couple b et nb2 (i.e. la base et le deuxiï¿½me terme de la somme ï¿½ calculer) n'est pas valide
 		if()
 		{
 			//Afficher un message d'erreur
 			
-			//Quitter prématurément le programme
+			//Quitter prï¿½maturï¿½ment le programme
 			 
 		}
 		
-	    //La partie qui suit s'exécute seulement si la base et les deux nombres à additionner sont valides
+	    //La partie qui suit s'exï¿½cute seulement si la base et les deux nombres ï¿½ additionner sont valides
 		
-		//Créer la variable "strNb1" de type String qui correspond au deuxième argument transformé en chaîne de caractères
+		//Crï¿½er la variable "strNb1" de type String qui correspond au deuxiï¿½me argument transformï¿½ en chaï¿½ne de caractï¿½res
 		
-		//Créer la variable "lon1" de type int qui stocke la longueur de la chaîne de caractères "strNb1"
+		//Crï¿½er la variable "lon1" de type int qui stocke la longueur de la chaï¿½ne de caractï¿½res "strNb1"
 		
-		//Créer la variable "strNb2" de type String qui correspond au troisième argument transformé en chaîne de caractères
+		//Crï¿½er la variable "strNb2" de type String qui correspond au troisiï¿½me argument transformï¿½ en chaï¿½ne de caractï¿½res
 		
-		//Créer la variable "lon2" de type int qui stocke la longueur de la chaîne de caractères "strNb2"
+		//Crï¿½er la variable "lon2" de type int qui stocke la longueur de la chaï¿½ne de caractï¿½res "strNb2"
 		
-		//Créer deux variables "chiffre1" et "chiffre2" de type int
+		//Crï¿½er deux variables "chiffre1" et "chiffre2" de type int
 		
-		//Créer la variable "ret" (pour la retenue) de type int et l'initialiser avec la valeur zéro
+		//Crï¿½er la variable "ret" (pour la retenue) de type int et l'initialiser avec la valeur zï¿½ro
 		
-		//Créer un compteur entier "i" de type int et initialisé à 1
+		//Crï¿½er un compteur entier "i" de type int et initialisï¿½ ï¿½ 1
 		
-		//Créer une variable "strSomme" (pour la somme calculée) de type String et l'initiliser avec la chaîne vide
+		//Crï¿½er une variable "strSomme" (pour la somme calculï¿½e) de type String et l'initiliser avec la chaï¿½ne vide
 		
 	    //Parcourir les deux nombres de la droite vers la gauche et additionner, pour chaque position,
 	    //les chiffres correspondants et la retenue
 		do
 		{
-			//Préciser le chiffre courant du premier terme de la somme
+			//Prï¿½ciser le chiffre courant du premier terme de la somme
 			if()
 			{
 				
@@ -111,7 +111,7 @@ public class Aux_TP4Exo1
 			{
 				
 			}
-			//Préciser le chiffre courant du deuxième terme de la somme
+			//Prï¿½ciser le chiffre courant du deuxiï¿½me terme de la somme
 			if()
 			{
 				
@@ -119,51 +119,51 @@ public class Aux_TP4Exo1
 			{
 				
 			}
-			//Calculer le chiffre courant de la somme et le concatener à gauche de la chaîne "strSomme"
+			//Calculer le chiffre courant de la somme et le concatener ï¿½ gauche de la chaï¿½ne "strSomme"
 			
 			//Calculer la nouvelle retenue
 			
-			//incrémenter le compteur d'une unité
+			//incrï¿½menter le compteur d'une unitï¿½
 			
-		//Continuer la boucle tant qu'il y a encore des chiffres à additionner
+		//Continuer la boucle tant qu'il y a encore des chiffres ï¿½ additionner
 		}while();
-		//Si la dernière retenue n'est pas nulle, concaténer sa valeur à gauche de la chaîne "strSomme"
+		//Si la derniï¿½re retenue n'est pas nulle, concatï¿½ner sa valeur ï¿½ gauche de la chaï¿½ne "strSomme"
 		if()
 		{
 			
 		}
-		//Crééer la variable "somme" de type int qui correspond à la chaîne "strSomme" transformée en valeur entière
+		//Crï¿½ï¿½er la variable "somme" de type int qui correspond ï¿½ la chaï¿½ne "strSomme" transformï¿½e en valeur entiï¿½re
 		
-		//Retourner la valeur entière de la somme calculée
+		//Retourner la valeur entiï¿½re de la somme calculï¿½e
 			
-	}	//fin de la méthode calculerSomme
+	}	//fin de la mï¿½thode calculerSomme
 
 //************************************************************************************************************************	
-//	Définir une méthode statique appelée "decToBase" qui a deux arguments :
-//	    - le premier argument "nb" représentant un nombre entier positif exprimé en base 10 ;
-//	    - le deuxième argument "base" représentant une base comprise entre 2 et 9 ;
+//	Dï¿½finir une mï¿½thode statique appelï¿½e "decToBase" qui a deux arguments :
+//	    - le premier argument "nb" reprï¿½sentant un nombre entier positif exprimï¿½ en base 10 ;
+//	    - le deuxiï¿½me argument "base" reprï¿½sentant une base comprise entre 2 et 9 ;
 //	 et qui :
-//	    - si la base n'est pas valide, arrête l'exécution du programme ;
-//   	- dans les autres cas, retourne la valeur du deuxième argument exprimée dans la base mentionnée.
+//	    - si la base n'est pas valide, arrï¿½te l'exï¿½cution du programme ;
+//   	- dans les autres cas, retourne la valeur du deuxiï¿½me argument exprimï¿½e dans la base mentionnï¿½e.
 	
 
 //************************************************************************************************************************	
-//	Définir une méthode statique appelée "baseToDec" qui a deux arguments :
-//	    - le premier argument "base" représentant une base comprise entre 2 et 9 ;
-//	    - le deuxième argument "nb" représentant un nombre entier positif exprimé dans la base mentionnée ;
+//	Dï¿½finir une mï¿½thode statique appelï¿½e "baseToDec" qui a deux arguments :
+//	    - le premier argument "base" reprï¿½sentant une base comprise entre 2 et 9 ;
+//	    - le deuxiï¿½me argument "nb" reprï¿½sentant un nombre entier positif exprimï¿½ dans la base mentionnï¿½e ;
 //	 et qui :
-//	    - si au moins un des deux arguments n'est pas valide, arrête l'exécution du programme ;
-//	    - dans les autres cas, retourne la valeur du deuxième argument en base 10.	
+//	    - si au moins un des deux arguments n'est pas valide, arrï¿½te l'exï¿½cution du programme ;
+//	    - dans les autres cas, retourne la valeur du deuxiï¿½me argument en base 10.	
 
 	
 //************************************************************************************************************************	
-//	Définir une méthode statique appelée "base1ToBase2" qui a trois arguments :
-//	    - le premier argument "base1" représentant une "ancienne" base comprise entre 2 et 9 ;
-//	    - le deuxième argument "nb" représentant un nombre entier positif exprimé dans l'"ancienne" base ; 
-//	    - le troisième argument "base2" représentant une "nouvelle" base comprise entre 2 et 9 ;
+//	Dï¿½finir une mï¿½thode statique appelï¿½e "base1ToBase2" qui a trois arguments :
+//	    - le premier argument "base1" reprï¿½sentant une "ancienne" base comprise entre 2 et 9 ;
+//	    - le deuxiï¿½me argument "nb" reprï¿½sentant un nombre entier positif exprimï¿½ dans l'"ancienne" base ; 
+//	    - le troisiï¿½me argument "base2" reprï¿½sentant une "nouvelle" base comprise entre 2 et 9 ;
 //	 et qui :
-//	    - si au moins un des trois arguments n'est pas valide, arrête l'exécution du programme ;
-//	    - dans les autres cas, retourne la valeur du deuxième argument exprimée dans la "nouvelle" base.
+//	    - si au moins un des trois arguments n'est pas valide, arrï¿½te l'exï¿½cution du programme ;
+//	    - dans les autres cas, retourne la valeur du deuxiï¿½me argument exprimï¿½e dans la "nouvelle" base.
 
 	
 //************************************************************************************************************************
