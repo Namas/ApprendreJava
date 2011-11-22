@@ -1,0 +1,15 @@
+package ditEnCours;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int toto = Integer.MIN_VALUE;
+		
+		System.out.println(toto);
+
+	}
+
+}

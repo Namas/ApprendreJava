@@ -1,0 +1,15 @@
+package ditEnCours;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int toto = Integer.MAX_VALUE;
+		
+		System.out.println(toto);
+
+	}
+
+}

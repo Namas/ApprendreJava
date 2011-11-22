@@ -1,0 +1,17 @@
+package SdZTp1;
+
+public class conversionFarenheit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		//Intro
+		//Demande val départ
+		//val arrivée
+		//pas
+		
+	}
+
+}

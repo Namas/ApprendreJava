@@ -1,0 +1,41 @@
+package SdZTp1;
+
+import java.util.Scanner;
+
+public class conversionFarenheit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		int tmp = 0, tmpDep = 0, tmpArr = 0, pas = 0, i = 0, j = 0;
+		int valTmp[] = new int[1000];
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Plage de conversion degré celcius Farenheit (nbr entier)");//Intro
+		System.out.println("Temperature de départ:");//Demmande temperature départ
+		tmpDep = tmp = sc.nextInt();
+		System.out.println("Temperature d'arrivée:");//temperature arrivée
+		tmpArr  = sc.nextInt();
+		System.out.println("Pas (nbr entier):");//pas
+		pas = sc.nextInt();
+		
+		while(tmp<tmpArr)
+		{
+			valTmp[i++] = tmp;
+			tmp += pas;
+			
+		}
+		
+		for(j=0;j<i;j++)
+		{
+			System.out.println(valTmp[j]);
+		}
+		//calculs F = 9/5 * C + 32
+		
+		
+		
+	}
+
+}

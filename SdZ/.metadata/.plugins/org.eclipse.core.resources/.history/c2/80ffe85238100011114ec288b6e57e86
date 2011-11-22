@@ -1,0 +1,17 @@
+package ditEnCours;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int minInt = Integer.MIN_VALUE, maxInt = Integer.MAX_VALUE;
+		
+		System.out.println("minInt: "+minInt+" max Int: "+maxInt);
+		short castShort= Short.MIN_VALUE;
+		System.out.println(castShort);
+
+	}
+
+}

@@ -1,0 +1,13 @@
+INDEX VERSION 1.126+/home/galago/Documents/Programmation/ApprendreJava/SdZ/.metadata/.plugins/org.eclipse.jdt.core
+1796948596.index
+316914481.index
+3426852820.index
+2040264796.index
+1393721363.index
+516116778.index
+1193566714.index
+925624498.index
+1189062746.index
+1654635368.index
+2889915287.index
+2686503099.index
