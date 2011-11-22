@@ -26,7 +26,7 @@ public class CP_TP4Exo1
 						Aux_TP4Exo1.calculerSomme(7, 35652426,
 								Aux_TP4Exo1.calculerSomme(7, 25203341, 56321556))));
 		System.out.println("-------------------------------------------------------------");		
-/*
+
 		//Tests pour la m�thode decToBase
 		//Le r�sultat obtenu doit �tre 106445636	
 		System.out.println("Le nombre 6 549 563 en base 10 devient en base 7 : " 
@@ -44,6 +44,6 @@ public class CP_TP4Exo1
 		System.out.println("Le nombre 2 446 053 en base 7 devient en base 5 : " 
 				+ Aux_TP4Exo1.base1ToBase2(7, 2446053, 5));	
 		System.out.println("*************************************************************");
-*/
+
 	}
 }

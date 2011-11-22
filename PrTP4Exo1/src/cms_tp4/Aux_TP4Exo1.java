@@ -1,5 +1,7 @@
 package cms_tp4;
 
+//import java.awt.SystemColor;
+
 public class Aux_TP4Exo1 
 {
 //************************************************************************************************************************	
@@ -126,7 +128,7 @@ public class Aux_TP4Exo1
 			//incr�menter le compteur d'une unit�
 			i++;
 		//Continuer la boucle tant qu'il y a encore des chiffres � additionner
-		}while(i<=lon1||1<=lon2);
+		}while(i<=lon1||i<=lon2);
 		//Si la derni�re retenue n'est pas nulle, concat�ner sa valeur � gauche de la cha�ne "strSomme"
 		if(ret != 0)
 		{
@@ -144,8 +146,35 @@ public class Aux_TP4Exo1
 //	    - le deuxi�me argument "base" repr�sentant une base comprise entre 2 et 9 ;
 //	 et qui :
 //	    - si la base n'est pas valide, arr�te l'ex�cution du programme ;
-//   	- dans les autres cas, retourne la valeur du deuxi�me argument exprim�e dans la base mentionn�e.
+// *(  	- dans les autres cas, retourne la valeur du deuxi�me argument exprim�e dans la base mentionn�e.
+ */
+public static int decToBase(int nb, int base)
+{
+	if(base<2 || base > 9)
+	{
+		System.out.println("Erreur Fatal ! Base non-valide");
+		System.exit(-3);
+	}
 	
+	int quotient = nb;
+	String strRes = "";
+	int chiffreRes;
+	
+	do
+	{
+		chiffreRes = quotient % base;
+		quotient = quotient/base;
+		strRes = chiffreRes + strRes;
+	}while(quotient>=base);
+	
+	if(quotient!=0)
+	{
+		strRes = quotient + strRes;
+	}
+	
+	return Integer.parseInt(strRes);
+}
+
 
 //************************************************************************************************************************	
 //	D�finir une m�thode statique appel�e "baseToDec" qui a deux arguments :
@@ -155,7 +184,38 @@ public class Aux_TP4Exo1
 //	    - si au moins un des deux arguments n'est pas valide, arr�te l'ex�cution du programme ;
 //	    - dans les autres cas, retourne la valeur du deuxi�me argument en base 10.	
 
+public static int baseToDec(int base, int nb)
+{
+	if(!verifierBaseNombre(base, nb))
+	{
+		System.out.println("Erreur fatale ! Impossible de convertir.");
+		System.exit(-4);
+	}
 	
+	//*
+	
+	String strNb = Integer.toString(nb);
+	int lon = strNb.length();
+	int i = 1;
+	int res = 0;
+	
+	do
+	{
+		res = res + Integer.parseInt(strNb.substring(i-1, i))*(int)Math.pow(base, lon-i);
+		i++;
+	}while(i<=lon);
+	
+	return res;
+	
+	//*/
+	/*
+	int i=0;
+	for(i=0;nb<=0;i++)
+	{
+		chiffre = nb%10
+	}
+	//*/
+}
 //************************************************************************************************************************	
 //	D�finir une m�thode statique appel�e "base1ToBase2" qui a trois arguments :
 //	    - le premier argument "base1" repr�sentant une "ancienne" base comprise entre 2 et 9 ;
@@ -167,7 +227,22 @@ public class Aux_TP4Exo1
 
 	
 //************************************************************************************************************************
-*/
+
+public static int base1ToBase2(int base1, int nb, int base2)
+{
+	if(!verifierBaseNombre(base1, nb)||base2<2||base2>9)
+	{
+		System.out.println("Erreur fatale !");
+		System.exit(-5);
+	}
+	
+	int resInterm = baseToDec(base1, nb);
+	int resFinal = decToBase(resInterm, base2);
+	
+	return resFinal;
+	
+}
+
 }
 
 
